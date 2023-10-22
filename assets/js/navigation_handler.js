@@ -1,41 +1,41 @@
-$('#customer_section').css('display','none');
-$('#item_section').css('display','none');
-$('#order_section').css('display','none');
-
-$('.navbar-nav>li').eq(0).on('click', () => {
-
-    $('#home').css('display','block');
-    $('#customer_section').css('display','none');
-    $('#item_section').css('display','none');
-    $('#order_section').css('display','none');
-})
-
-$('.navbar-nav>li').eq(1).on('click', () => {
-    $('#home').css('display','none');
-    $('#customer_section').css('display','none');
-    $('#item_section').css('display','block');
-    $('#order_section').css('display','none');
-})
 
 
-$('.navbar-nav>li').eq(2).on('click', () => {
-    $('#home').css('display','none');
-    $('#customer_section').css('display','block');
-    $('#item_section').css('display','none');
-    $('#order_section').css('display','none');
-})
+    $('#customer_section').css('display', 'none');
+    $('#item_section').css('display', 'none');
+    $('#order_section').css('display', 'none');
 
 
-$('.navbar-nav>li').eq(3).on('click', () => {
-    $('#home').css('display','none');
-    $('#customer_section').css('display','none');
-    $('#item_section').css('display','none');
-    $('#order_section').css('display','block');
-})
+    $('#home_link,#home_link1').on('click', () => {
+        $('#home').css('display', 'block');
+        $('#customer_section').css('display', 'none');
+        $('#item_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
+    })
+
+    $('#item_link,#item_link1').on('click', () => {
+        $('#home').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#item_section').css('display', 'block');
+        $('#order_section').css('display', 'none');
+    })
 
 
+    $('#customer_link, #customer_link1').on('click', () => {
+        $('#home').css('display', 'none');
+        $('#customer_section').css('display', 'block');
+        $('#item_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
+
+        console.log("Customer Section");
+    })
 
 
+    $('#order_link,#order_link1').on('click', () => {
+        $('#home').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#item_section').css('display', 'none');
+        $('#order_section').css('display', 'block');
+    })
 
 
 $("#nav-icon-open").on("click", () => {
