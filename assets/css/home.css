@@ -1,12 +1,13 @@
-main{
-    height: 100%;
-    padding-bottom: 180vh;
-}
+
 #account_details{
     border: 2px solid;
     border-color: white white brown brown;
     text-align: center;
     margin-left: 25vw;
+
+    position: absolute;
+    /*width: 25vw;*/
+    right: 0;
 }
 #account_details>div>img{
     border-radius: 50%;
@@ -36,14 +37,15 @@ footer{
 #company_logo{
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 footer>h4{
     position: absolute;
 
 }
 #sales_chart{
-    margin-left: 15vw;
-    margin-top: 20vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
 }
 #row2{
     padding-top: 25vh;
@@ -57,13 +59,29 @@ footer>h4{
 .promo{
     padding-left: 18vw ;
 }
-@media all and (min-width:1440px){
+footer>h4{
+    bottom: 2vh;
+    left: 4vw;
+}
+#place_order > a > img {
+    position: absolute;
+    right: 1vw;
+    top: 78vh;
+    width: 150px;
+    margin-right: 6vw;
+    margin-top: 5vh;
+}
+#problem_img{
+    margin-top: 4vh;
+}
+
+@media all and (min-width:1024px){
 
 
     #company_logo{
         width: 120px;
         height: 80px;
-        bottom: 0;
+
     }
     #problem_img{
         position: absolute;
@@ -76,9 +94,98 @@ footer>h4{
         bottom: 0;
         left: 27vw;
     }
+
+
+
+}
+@media all and (max-width:769px){
+
+
+    #place_order>a>img{
+        width: 150px;
+        margin-left: 35vw;
+        margin-top: 5vh;
+    }
+    .promo{
+        padding-left: 20vw ;
+    }
+    #company_logo{
+        width: 150px;
+    }
+    #problem_img{
+        width: 80px;
+        bottom: 0;
+    }
     footer>h4{
-        bottom: 2vh;
-        left: 4vw;
+        font-size: 16px;
+    }
+
+}
+@media all and (max-width:640px) {
+
+    .promo{
+        padding-left: 26vw ;
+        padding-top: 15vh;
+
+    }
+    #problem_img {
+        width: 35px;
+    }
+
+}
+@media all and (max-width:768px) {
+
+    .promo{
+        padding-left: 6vw ;
+        padding-top: 5vh;
+
+    }
+    #problem_img {
+        width: 35px;
+    }
+
+}
+@media all and (max-width:425px){
+
+
+    #place_order>a>img{
+        width: 100px;
+        margin-top: 6vh;
+
+    }
+    #row3{
+        padding-top: 10vh;
+    }
+    .promo{
+        padding-left: 25vw ;
+    }
+    #company_logo{
+        width: 100px;
+    }
+    #problem_img{
+        width: 35px;
+        bottom: 0;
+
+    }
+    footer>h4{
+        font-size: 11px;
+    }
+}
+
+
+@media all and (max-width:1023px){
+
+    #account_details{
+        display: none;
+    }
+    #problem_img{
+        width: 55px;
+        bottom: 0;
+
+    }
+    .promo{
+        padding-left: 8vw ;
+
     }
 
 }
